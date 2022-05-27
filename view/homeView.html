@@ -1,0 +1,80 @@
+{{>header}}
+
+<form action="{{URLS.domain_name}}/search/execute" method="POST">
+
+    <div class="row m-5 py-5">
+        <div class="col-14">
+            <span class="px-2">Viaje</span>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipoDeViaje" id="inlineRadio1" value="Ida">
+                <label class="form-check-label" for="inlineRadio1">Ida</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipoDeViaje" id="inlineRadio2" value="Vuelta">
+                <label class="form-check-label" for="inlineRadio2">Tour</label>
+            </div>
+        </div>
+
+       <div class="col-3 position-relative was-validated">
+            <select class="form-select" required name="origen">
+                <option value="">Seleccionar Origen</option>
+                <option value="Buenos Aires">Tierra - Buenos Aires</option>
+                <option value="Ankara">Tierra - Ankara</option>
+                <option value="Luna">Luna</option>
+            </select>
+            <div class="valid-tooltip">Origen seleccionado</div>
+            <div class="invalid-tooltip">Seleccione un origen</div>
+        </div>
+
+       <div class="col-3 position-relative was-validated">
+            <select class="form-select" required aria-label="select example" name="destino">
+                <option value="">Seleccionar destino</option>
+                <option value="Marte">Marte</option>
+                <option value="Orbital Hotel">Orbiter Hotel</option>
+                <option value="Titan">Titán</option>
+                <option value="ISS">ISS</option>
+            </select>
+            <div class="valid-tooltip">Destino seleccionado</div>
+            <div class="invalid-tooltip">Seleccione un destino</div>
+        </div>
+
+        <div class="col">
+            <input class="form-control" type="date" name="fecha" placeholder="dd/mm/aaaa" min="2022-05-18" max="2030-05-18">
+        </div>
+
+        <div class="col">
+            <select class="form-select" aria-label="Nivel del pasajero" name="nivelPasajero">
+                <option disabled selected>Nivel</option>
+                <option value="Nivel 1">Nivel 1</option>
+                <option value="Nivel 2">Nivel 2</option>
+                <option value="Nivel 3">Nivel 3</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <select class="form-select" aria-label="Opciones de cabina" name="cabina">
+                <option disabled selected>Cabina</option>
+                <option value="Turista">Turista</option>
+                <option value="Ejecutiva">Ejecutiva</option>
+                <option value="Primera">Primera</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <select class="form-select" aria-label="Opciones de servicio" name="servicio">
+                <option disabled selected>Servicio</option>
+                <option value="Standard">Standard</option>
+                <option value="Gourmet">Gourmet</option>
+                <option value="Spa">Spa</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <button type="submit" class="btn btn-secondary" name="buscar"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+</form>
+
+
+{{>footer}}
