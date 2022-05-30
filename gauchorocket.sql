@@ -470,8 +470,8 @@ insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, Ser
 (41, 4, 5, "2022-05-19 08:00:00", "2022-05-19 23:10:00", 1, 500),
 (20, 5, 4, "2022-05-19 08:00:00", "2022-05-19 23:40:00", 1, 500),
 -- orbital hotel / luna alta aceleracion
-(28, 4, 5, "2022-05-19 08:20:00", "2022-05-19 19:10:00", 1, 500),
-(29, 4, 5, "2022-05-19 08:05:00", "2022-05-19 18:10:00", 1, 500);
+(32, 4, 5, "2022-05-19 08:20:00", "2022-05-19 19:10:00", 1, 500),
+(32, 4, 5, "2022-05-19 08:05:00", "2022-05-19 18:10:00", 1, 500);
 
 insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
 -- ----------- luna / marte- baja aceleracion -----------
@@ -542,3 +542,68 @@ insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, Ser
 -- encedalo / titan - alta aceleracion
 (30, 10, 11, "2022-05-30 09:00:00", "2022-06-02 10:40:00", 1, 500),
 (31, 11, 10, "2022-05-30 09:00:00", "2022-06-02 10:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+-- Buenos Aires / ISS
+(12, 1, 3, "2022-06-18 00:02:00", "2022-05-19 08:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+-- Encedalo Titan
+(12, 10, 11, "2022-06-8 00:02:00", "2022-05-19 08:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+-- Tierra / ISS
+(12, 3, 2, "2022-06-28 00:02:00", "2022-05-19 08:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+(12, 3, 2, "2022-06-05 00:02:00", "2022-05-19 08:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+-- Encedalo Titan
+(1, 10, 11, "2022-06-18 00:02:00", "2022-05-19 08:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+(12, 1, 3, "2022-06-18 00:02:00", "2022-06-19 08:10:00", 1, 500),
+(13, 3, 1, "2022-06-08 04:05:00", "2022-06-09 12:10:00", 1, 500),
+(25, 2, 3, "2022-06-08 00:10:00", "2022-06-09 08:10:00", 1, 500),
+(27, 3, 2, "2022-06-18 04:10:00", "2022-06-19 12:20:00", 1, 500),
+(12, 3, 1, "2022-06-18 12:02:00", "2022-06-19 20:10:00", 1, 500),
+(13, 1, 3, "2022-06-18 15:05:00", "2022-06-19 23:10:00", 1, 500),
+(25, 3, 2, "2022-06-18 12:10:00", "2022-06-19 20:10:00", 1, 500),
+(27, 2, 3, "2022-06-18 15:10:00", "2022-06-19 23:20:00", 1, 500),
+-- ISS / orbital hotel baja aceleracion
+(6, 3, 4, "2022-06-19 06:02:00", "2022-06-19 07:10:00", 1, 500),
+(7, 4, 3, "2022-06-19 06:05:00", "2022-06-19 07:10:00", 1, 500),
+-- ISS / orbital hotel alta aceleracion
+(28, 3, 4, "2022-06-19 07:02:00", "2022-06-19 08:10:00", 1, 500),
+(29, 4, 3, "2022-06-19 08:05:00", "2022-06-19 09:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+-- orbital hotel / luna alta aceleracion
+(32, 4, 5, "2022-06-19 08:20:00", "2022-06-19 19:10:00", 1, 500),
+(32, 4, 5, "2022-06-19 08:05:00", "2022-06-19 18:10:00", 1, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+(12, 5, 4, "2022-06-18 00:02:00", "2022-06-19 08:10:00", 2, 500),
+(13, 4, 5, "2022-06-08 04:05:00", "2022-06-09 12:10:00",2, 500),
+(25, 5, 6, "2022-06-08 00:10:00", "2022-06-09 08:10:00", 3, 500);
+
+insert into Tramo (EquipoID, OrigenID, DestinoID, FechaSalida, FechaLlegada, ServicioID, Precio) values
+(25, 1, 1, "2022-06-01 00:10:00", "2022-07-05 08:10:00", 1, 1000),
+(25, 2, 2, "2022-06-02 00:10:00", "2022-07-06 08:10:00", 2, 1000),
+(25, 1, 1, "2022-06-15 00:10:00", "2022-07-21 08:10:00", 3, 1000);
+
+SELECT DISTINCT dd.nombre AS origen, d.nombre AS destino, t.FechaSalida AS salida, t.FechaLlegada AS llegada,
+		sb.nombre AS servicio, c.nombre AS cabina, t.precio AS precio, tv.nombre AS tipoVuelo, nv.nombre AS nivelVuelo
+        FROM destino d JOIN
+        tramo t ON d.id=t.DestinoID JOIN
+        destino dd ON dd.id=t.OrigenID JOIN
+        servicioabordo sb ON  t.servicioID=sb.id JOIN
+        equipo e ON sb.id=e.id JOIN
+        capacidadcabina cap ON e.id=cap.CabinaID JOIN
+        cabina c ON cap.CabinaID=c.id JOIN
+        tipovuelo tv ON c.id=tv.id JOIN
+        nivelvuelo nv ON tv.id=nv.id
+        WHERE dd.id=1 AND d.id=1 AND t.FechaSalida BETWEEN CURDATE() AND CURDATE() + INTERVAL 30 DAY;
+        
+select * from tramo;
